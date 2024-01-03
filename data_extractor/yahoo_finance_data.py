@@ -14,13 +14,19 @@ def load_data_for_analysis():
 Load historycal data. This is mainly used to train the time series model
 """
 def load_historical_data(interval:Interval, symbols:List[str], pediod: Period = Period.MAX)-> pd.DataFrame:
-    return yf.download(tickers=symbols, period=str(pediod), interval=str(interval))
+    try:
+        return yf.download(tickers=symbols, period=str(pediod), interval=str(interval))
+    except:
+        return pd.DataFrame()
 
 """
 Intraday data cannot extend last 60 days on yahoo API
 """
 def load_intraday(symbol, interval = Interval.HOUR)-> pd.DataFrame:
-    return yf.download(tickers=symbol, period=str(Period.DAY), interval=str(interval))
+    try:
+        return yf.download(tickers=symbol, period=str(Period.DAY), interval=str(interval))
+    except:
+        return pd.DataFrame()
 
 if __name__ == "__main__":
     # yf.download(tickers=['MSFT','QCOM'], period=str(Period.MAX), interval=str(Interval.DAY)).to_excel("historical_example.xlsx")
