@@ -1,3 +1,12 @@
 [
-    {"name": "Microsoft", "stock": "MSFT", "timezone": "-5"}
-]
+    {"name": "Qualcomm", "stock": "QCOM", "timezone": "-5"},
+    {"name": "Rivian Automotive", "stock": "RIVN", "timezone": "-5"},
+    {"name": "Apple", "stock": "AAPL", "timezone": "-5"},
+    {"name": "Alphabet", "stock": "GOOGL", "timezone": "-5"},
+    {"name": "Microsoft", "stock": "MSFT", "timezone": "-5"},
+    {"name": "Cloudflare", "stock": "NET", "timezone": "-5"},
+    {"name": "Palantir Technologies", "stock": "PLTR", "timezone": "-5"},
+    {"name": "Advanced Micro Devices", "stock": "AMD", "timezone": "-5"},
+    {"name": "Tesla Motors", "stock": "TSLA", "timezone": "-5"},
+    {"name": "NVIDIA Corp", "stock": "NVDA", "timezone": "-5"}
+  ]
